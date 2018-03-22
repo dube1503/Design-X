@@ -57,7 +57,77 @@ html,body {
     left: 0;
     width:100%;
     height: 100%;
-    overflow: hidden;
+
     display: block;
     margin-top:0;
 }
+
+body {
+    background-color: #E8A631;
+}
+
+#grid {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 200px auto;
+
+    perspective: 1300px;
+}
+
+.col {
+    padding-bottom: 200px;
+    width: 200px;
+    background: center / contain no-repeat url('images/Valeria.jpg');
+    margin-bottom: 20px;
+    visibility: hidden;
+
+    transform-style: preserve-3d;
+}
+
+.col.animate {
+    transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+    animation: fallPerspective .8s ease-in-out forwards;
+    visibility: visible;
+}
+
+.revealer {
+    
+    
+}
+
+.image {
+    background: center / contain no-repeat url('images/X-image.png');
+    padding-bottom: 650px;   
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 5;
+}
+
+#media {
+    background: rgba(40,44,50,1);
+    width: 0%;
+    padding-bottom: 650px;
+
+    animation: reveal 1s ease-in-out forwards;
+
+    position: relative;
+    margin: 0 auto;
+    display: block;
+
+    padding-bottom: 650px;
+    
+}
+
+@keyframes fallPerspective {
+    100% { transform: translateZ(0px) translateY(0px) rotateX(0deg); opacity: 1; }
+}
+
+@keyframes reveal {
+    100% { width:100% ; opacity: 1; }
+}
+
