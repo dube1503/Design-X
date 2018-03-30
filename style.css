@@ -137,8 +137,9 @@ body {
 
 #bubble {
     margin: 0 auto;
-    width: 70%;
+    width: 90%;
     margin-top: -50px;
+    max-width: 950px;
 }
 
 #info {
@@ -146,19 +147,20 @@ body {
     width: 60%;
     color: #2b2b2b;
     margin-top: -50px;
+    max-width: 625px;
 }
 
 h1 {
     font-family: 'Fira Sans';
     font-weight: 700;
-    font-size: 2.3rem;
+    font-size: 2rem;
     text-align: center;
 }
 
 h2 {
     font-family: 'Fira Sans';
     font-weight: 300;
-    font-size: 1.55rem;
+    font-size: 1.4rem;
     text-align: center;
     margin-bottom: 15px;
     font-variant: small-caps;
@@ -169,7 +171,7 @@ p {
     font-weight: 300;
     font-size: 1.75rem;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 17px;
 }
 
 @media screen and (max-width: 770px) {
@@ -192,22 +194,22 @@ p {
     }
 
     #info {
-        width: 84%;
+        width: 77%;
     }
 
     h2 {
-        font-size: 1.3rem;
+        font-size: 1.15rem;
         margin-bottom: 10px;
     }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.45rem;
         line-height: 2rem;
     }
 
     p {
-        font-size: 1.3rem;
-        margin-top: 35px;
+        font-size: 1.15rem;
+        margin-top: 15px;
     }
 
 }
