@@ -53,6 +53,10 @@ img {
 	display: block; /*removes tiny space added in some browsers below images */
 }
 
+a {
+    text-decoration: none;
+}
+
 html,body {
     left: 0;
     width:100%;
@@ -63,19 +67,75 @@ html,body {
 }
 
 body {
+    background-color: #FAF1E0;
+}
+
+/* Content Filter */
+
+div.filter-title {
+    width: 100%;
+    align-content: center;
+    padding: 15vh 0 10vh 0;
     background-color: #E8A631;
+}
+
+div.filter-title h1 {
+    display: block;
+    margin: 0 auto;
+}
+
+div.filter-title h1 .active-sort {
+    display: inline-block;
+    border-bottom: thick dotted #2b2b2b;
+    padding-bottom: 5px;
+}
+
+div.filter-tab {
+    background-color: #EC512C;
+
+}
+
+ul#filter {
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul#filter li {
+    display: inline-block;
+}
+
+ul#filter li a {
+    margin: 0 auto;
+    display: block;
+    color: #FAF1E0;
+    text-decoration: none;
+    padding: 5vh 15px 5vh 15px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: .05em;
+}
+
+ul#filter li a:hover {
+    color: #193148;
+}
+
+ul#filter li a.selected {
+    color: #193148;
+    font-weight: 500;
+    box-shadow: inset 0 -4px 0 #193148;
 }
 
 /*Photo grid test*/
 
 #grid {
     display: flex;
-    justify-content: space-around;
     align-content: flex-start;
     flex-flow: row;
     flex-wrap: wrap;
+    padding: 5px;
     width: 85%;
-    margin: 200px auto;
+    margin: 20px auto;
 
     perspective: 1300px;
 }
@@ -83,22 +143,27 @@ body {
 .col {
     padding-bottom: 200px;
     width: 200px;
+    opacity: .99;
     background: center / contain no-repeat url('images/Valeria.jpg');
-    margin-bottom: 20px;
+    margin: 5px;
     visibility: hidden;
 
     transform-style: preserve-3d;
+
+    transition: width 1s;
+}
+
+.col.animate.hidden {
+    width: 0;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .col.animate {
     transform: translateZ(400px) translateY(300px) rotateX(-90deg);
     animation: fallPerspective .8s ease-in-out forwards;
     visibility: visible;
-}
-
-.revealer {
-    
-    
 }
 
 .image {
