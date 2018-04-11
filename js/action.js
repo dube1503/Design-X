@@ -1,3 +1,4 @@
+// Image loading animation //
 $(window).scroll(function() {
     
 
@@ -15,15 +16,39 @@ $(window).scroll(function() {
                 setTimeout(function(){
                     curr.addClass("animate");
                 },offset.left);
-                // $(this).delay(offset.left).queue(function(nxt) {
-                //     $(this).addClass("animate");
-                //     nxt();
-                // });
-            }
-            
-        }
-        else {
-            // The element is not visible, do something else
-        }
-    })
+            };
+        };
+    });
+});
+
+// Content filter //
+
+$(document).on("click", "a#filter-btn", function() {
+    if(!$(this).hasClass("selected")) {
+            // Remove previous selected and change to current //
+            $(".selected").removeClass("selected");
+            $(this).addClass("selected");
+            // Dump text from selected title and replace with current //
+            $(".active-sort").empty();
+            $(".active-sort").append($(this).attr("data-type"))
+            // Sort images according to selection //
+            $(".col").each(function() {
+                // If the Design (ALL) option is selected
+                if ($(".selected").attr("data-type")==="Design") {
+                    // Make sure all images are visible //
+                    if ($(this).hasClass("hidden")) {
+                        $(this).removeClass("hidden");
+                    };
+                }
+                // Check which images DO NOT MATCH the selection //
+                else if (!$(this).hasClass($(".selected").attr("data-type"))) {
+                    // If tag isnt found in image, hide it //
+                    $(this).addClass("hidden");
+                };
+                // Make sure all images that match selection are showing //
+                if ($(this).hasClass($(".selected").attr("data-type")) && $(this).hasClass("hidden")) {
+                    $(this).removeClass("hidden");
+                };
+            });
+        };
 });
