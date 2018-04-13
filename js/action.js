@@ -1,7 +1,7 @@
 // Image loading animation //
-$(window).scroll(function() {
-    
+var counting = 0;
 
+$(window).scroll(function() {
     $(".col").each(function() {
         var top_of_element = $(this).offset().top;
         var bottom_of_element = $(this).offset().top + $(this).outerHeight();
@@ -10,11 +10,18 @@ $(window).scroll(function() {
         var offset = $(this).offset();
         var curr = $(this);
 
-        if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-            // The element is visible, do something
+        // The element is visible, do something
+        // If 10 elements have loaded, load the rest
+        if (counting >= 10) {
+            setTimeout(function(){
+                curr.addClass("animate");
+            },offset.left);
+        }
+        else if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
             if (!curr.hasClass("animate")) {
                 setTimeout(function(){
                     curr.addClass("animate");
+                    counting = (counting+1);
                 },offset.left);
             };
         };
