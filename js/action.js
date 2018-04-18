@@ -23,33 +23,31 @@
 
 // Content filter //
 
-// $(document).on("click", "a#filter-btn", function() {
-//     if(!$(this).hasClass("selected")) {
-//             // Remove previous selected and change to current //
-//             $(".selected").removeClass("selected");
-//             $(this).addClass("selected");
-//             // Dump text from selected title and replace with current //
-//             $(".active-sort").empty();
-//             $(".active-sort").append($(this).attr("data-filter"))
-//             // Sort images according to selection //
-//             $(".mix").each(function() {
-//                 // If the Design (ALL) option is selected
-//                 if ($(".selected").attr("data-filter")==="design") {
-//                     // Make sure all images are visible //
-//                     if ($(this).hasClass("hidden")) {
-//                         $(this).removeClass("hidden");
-//                     };
-//                 }
-//                 // Check which images DO NOT MATCH the selection //
-//                 else if (!$(this).hasClass($(".selected").attr("data-filter"))) {
-//                     // If tag isnt found in image, hide it //
-//                     $(this).addClass("hidden");
-//                 };
-//                 // Make sure all images that match selection are showing //
-//                 if ($(this).hasClass($(".selected").attr("data-filter")) && $(this).hasClass("hidden")) {
-//                     $(this).removeClass("hidden");
-//                 };
-//             });
-//         };
-// });
+$(document).on("click", "a#filter-btn", function() {
+    if(!$(this).hasClass("selected")) {
+        // Remove previous selected and change to current //
+        $(".selected").removeClass("selected");
+        $(this).addClass("selected");
+        // Dump text from selected title and replace with current //
+        $(".active-sort").empty();
+        // Convert data-filter to string
+        var str = $(this).attr("data-filter");
+        // Strip string of extra characters
+        str = str.replace(/[.-]/g, ' ');
+        // Check what string is selected
+        switch (str) {
+            // If 'all' selected, insert empty space to sort
+            case 'all':
+                $(".active-sort").append('&emsp; &emsp; &emsp;');
+                break;
+            // If 'thrD' selected, insert '3d' to sort
+            case ' thrD design':
+                $(".active-sort").append('3d design');
+                break;
+            // Else, insert converted text
+            default:
+                $(".active-sort").append(str);
+        };
+    };
+});
 
