@@ -228,8 +228,6 @@ ul#filter li a.selected {
 .mix {
     padding-bottom: 200px;
     width: 200px;
-    opacity: .99;
-    background: center / contain no-repeat url('images/Valeria.jpg');
     margin: 5px;
 
     position: relative;
