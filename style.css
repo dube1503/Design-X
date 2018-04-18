@@ -107,6 +107,16 @@ h5 {
     color: #FAF1E0;
 }
 
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    letter-spacing: .075em;
+    padding-bottom: 2px;
+    color: white;
+    text-shadow: rgba(0,0,0,.4) 2px 2px 5px;
+}
+
 /* Wrapper */
 
 #wrapper {
@@ -172,10 +182,6 @@ div.filter-title h2 .active-sort {
     padding-bottom: 5px;
 }
 
-div.filter-tab {
-
-}
-
 ul#filter {
     margin: 0 auto;
     text-align: left;
@@ -205,9 +211,9 @@ ul#filter li a.selected {
     color: #EC512C;
 }
 
-/*Photo grid test*/
+/* Portfolio Portrait Gallery */
 
-#grid {
+.grid {
     display: flex;
     align-content: flex-start;
     flex-flow: row;
@@ -225,11 +231,22 @@ ul#filter li a.selected {
     opacity: .99;
     background: center / contain no-repeat url('images/Valeria.jpg');
     margin: 5px;
-    visibility: hidden;
+
+    position: relative;
 
     transform-style: preserve-3d;
 
     transition: width 1s;
+}
+
+section.gallery .grid .mix img {
+    position: absolute;
+}
+
+section.gallery .grid .mix .name {
+    position: absolute;
+    bottom: 11px;
+    left: 20px;
 }
 
 .mix.animate.hidden {
