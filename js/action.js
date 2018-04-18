@@ -2,9 +2,9 @@
 $(window).scroll(function() {
     
 
-    $(".col").each(function() {
-        var top_of_element = $(this).offset().top;
-        var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+    $(".mix").each(function() {
+        var top_of_element = $("#grid").offset().top;
+        var bottom_of_element = $("#grid").offset().top + $(this).outerHeight();
         var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
         var top_of_screen = $(window).scrollTop();
         var offset = $(this).offset();
@@ -30,23 +30,23 @@ $(document).on("click", "a#filter-btn", function() {
             $(this).addClass("selected");
             // Dump text from selected title and replace with current //
             $(".active-sort").empty();
-            $(".active-sort").append($(this).attr("data-type"))
+            $(".active-sort").append($(this).attr("data-filter"))
             // Sort images according to selection //
-            $(".col").each(function() {
+            $(".mix").each(function() {
                 // If the Design (ALL) option is selected
-                if ($(".selected").attr("data-type")==="Design") {
+                if ($(".selected").attr("data-filter")==="design") {
                     // Make sure all images are visible //
                     if ($(this).hasClass("hidden")) {
                         $(this).removeClass("hidden");
                     };
                 }
                 // Check which images DO NOT MATCH the selection //
-                else if (!$(this).hasClass($(".selected").attr("data-type"))) {
+                else if (!$(this).hasClass($(".selected").attr("data-filter"))) {
                     // If tag isnt found in image, hide it //
                     $(this).addClass("hidden");
                 };
                 // Make sure all images that match selection are showing //
-                if ($(this).hasClass($(".selected").attr("data-type")) && $(this).hasClass("hidden")) {
+                if ($(this).hasClass($(".selected").attr("data-filter")) && $(this).hasClass("hidden")) {
                     $(this).removeClass("hidden");
                 };
             });
