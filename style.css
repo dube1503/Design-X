@@ -211,6 +211,18 @@ ul#filter li a.selected {
     color: #EC512C;
 }
 
+/* Duotone Filters */
+
+/* Ensures the svg element doesnt appear */
+.svg-filters {
+  height: 0;
+  left: -9999em;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
 /* Portfolio Portrait Gallery */
 
 .grid {
@@ -237,8 +249,13 @@ ul#filter li a.selected {
     transition: width 1s;
 }
 
+section.gallery .grid .mix img:hover {
+    filter: url('#duotone_red');
+}
+
 section.gallery .grid .mix img {
     position: absolute;
+    filter: url('#duotone_blue');
 }
 
 section.gallery .grid .mix .name {
@@ -247,48 +264,6 @@ section.gallery .grid .mix .name {
     left: 20px;
 }
 
-.mix.animate.hidden {
-    width: 0;
-    opacity: 0;
-    padding: 0;
-    margin: 0;
-}
 
-.mix.animate {
-    transform: translateZ(400px) translateY(300px) rotateX(-90deg);
-    animation: fallPerspective .8s ease-in-out forwards;
-    visibility: visible;
-}
 
-.image {
-    background: center / contain no-repeat url('images/X-image.png');
-    padding-bottom: 650px;   
-    width: 100%;
-    margin: 0 auto;
-    position: absolute;
-    z-index: 5;
-}
-
-#media {
-    background: rgba(40,44,50,1);
-    width: 0%;
-    padding-bottom: 650px;
-
-    animation: reveal 1s ease-in-out forwards;
-
-    position: relative;
-    margin: 0 auto;
-    display: block;
-
-    padding-bottom: 650px;
-    
-}
-
-@keyframes fallPerspective {
-    100% { transform: translateZ(0px) translateY(0px) rotateX(0deg); opacity: 1; }
-}
-
-@keyframes reveal {
-    100% { width:100% ; opacity: 1; }
-}
 

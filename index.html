@@ -66,6 +66,7 @@
     <!-- content -->
 
             <main>
+                
                 <div class="filter-wrapper">
 
                     <div class="filter-title">
@@ -119,6 +120,40 @@
                     </div>
 
                 </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg-filters">
+                  <filter id="duotone_blue">
+                    <feColorMatrix type="matrix" result="grayscale"
+                      values="1 0 0 0 0
+                              1 0 0 0 0
+                              1 0 0 0 0
+                              0 0 0 1 0" />
+                    
+                    <feComponentTransfer color-interpolation-filters="sRGB" result="duotone_blue_cream">
+                      <feFuncR type="table" tableValues="0.09803922 0.94509804"></feFuncR>
+                      <feFuncG type="table" tableValues="0.19215686 0.90980392"></feFuncG>
+                      <feFuncB type="table" tableValues="0.28235294 0.84313725"></feFuncB>
+                      <feFuncA type="table" tableValues="0 1"></feFuncA>
+                    </feComponentTransfer> 
+                  </filter>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg-filters">
+                  <filter id="duotone_red">
+                    <feColorMatrix type="matrix" result="grayscale"
+                      values="1 0 0 0 0
+                              1 0 0 0 0
+                              1 0 0 0 0
+                              0 0 0 1 0" />
+                    
+                    <feComponentTransfer color-interpolation-filters="sRGB" result="duotone_red_cream">
+                      <feFuncR type="table" tableValues="0.89019608 0.94509804"></feFuncR>
+                      <feFuncG type="table" tableValues="0.31764706 0.90980392"></feFuncG>
+                      <feFuncB type="table" tableValues="0.17254902 0.84313725"></feFuncB>
+                      <feFuncA type="table" tableValues="0 1"></feFuncA>
+                    </feComponentTransfer> 
+                  </filter>
+                </svg>
 
                 <section class="gallery">
                     <div class="grid">
