@@ -75,42 +75,42 @@ body {
 h1 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 700;
-    font-size: 106px;
+    font-size: 6.625em;
     color: #FAF1E0;
 }
 
 h2 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 2em;
     color: #FAF1E0;
 }
 
 h3 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
-    font-size: 31px;
+    font-size: 1.9375em;
     color: #F1AF31;
 }
 
 h4 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
-    font-size: 27px;
+    font-size: 1.6875em;
     color: #FAF1E0;
 }
 
 h5 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.125em;
     color: #FAF1E0;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 19px;
+    font-size: 1.1875em;
     letter-spacing: .075em;
     padding-bottom: 2px;
     color: white;
@@ -200,7 +200,7 @@ ul#filter li a {
     text-decoration: none;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 ul#filter li a:hover {
