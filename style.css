@@ -267,7 +267,7 @@ section.gallery .grid .mix .name {
     bottom: 11px;
     left: 20px;
 }
-
-
-
+.name {
+    pointer-events:none;
+}
 
