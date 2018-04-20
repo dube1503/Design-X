@@ -75,42 +75,42 @@ body {
 h1 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 700;
-    font-size: 106px;
+    font-size: 6.625em;
     color: #FAF1E0;
 }
 
 h2 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 2em;
     color: #FAF1E0;
 }
 
 h3 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
-    font-size: 31px;
+    font-size: 1.9375em;
     color: #F1AF31;
 }
 
 h4 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
-    font-size: 27px;
+    font-size: 1.6875em;
     color: #FAF1E0;
 }
 
 h5 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.125em;
     color: #FAF1E0;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 19px;
+    font-size: 1.1875em;
     letter-spacing: .075em;
     padding-bottom: 2px;
     color: white;
@@ -200,7 +200,7 @@ ul#filter li a {
     text-decoration: none;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 ul#filter li a:hover {
@@ -209,6 +209,18 @@ ul#filter li a:hover {
 
 ul#filter li a.selected {
     color: #EC512C;
+}
+
+/* Duotone Filters */
+
+/* Ensures the svg element doesnt appear */
+.svg-filters {
+  height: 0;
+  left: -9999em;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 0;
 }
 
 /* Portfolio Portrait Gallery */
@@ -237,8 +249,13 @@ ul#filter li a.selected {
     transition: width 1s;
 }
 
+section.gallery .grid .mix img:hover {
+    filter: url('#duotone_red');
+}
+
 section.gallery .grid .mix img {
     position: absolute;
+    filter: url('#duotone_blue');
 }
 
 section.gallery .grid .mix .name {
@@ -247,48 +264,6 @@ section.gallery .grid .mix .name {
     left: 20px;
 }
 
-.mix.animate.hidden {
-    width: 0;
-    opacity: 0;
-    padding: 0;
-    margin: 0;
-}
 
-.mix.animate {
-    transform: translateZ(400px) translateY(300px) rotateX(-90deg);
-    animation: fallPerspective .8s ease-in-out forwards;
-    visibility: visible;
-}
 
-.image {
-    background: center / contain no-repeat url('images/X-image.png');
-    padding-bottom: 650px;   
-    width: 100%;
-    margin: 0 auto;
-    position: absolute;
-    z-index: 5;
-}
-
-#media {
-    background: rgba(40,44,50,1);
-    width: 0%;
-    padding-bottom: 650px;
-
-    animation: reveal 1s ease-in-out forwards;
-
-    position: relative;
-    margin: 0 auto;
-    display: block;
-
-    padding-bottom: 650px;
-    
-}
-
-@keyframes fallPerspective {
-    100% { transform: translateZ(0px) translateY(0px) rotateX(0deg); opacity: 1; }
-}
-
-@keyframes reveal {
-    100% { width:100% ; opacity: 1; }
-}
 
