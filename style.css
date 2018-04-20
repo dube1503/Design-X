@@ -126,6 +126,10 @@ p {
 
 /* Header Styles */
 
+header {
+    background: linear-gradient(to right, #4fa0e9 , #4082be);
+}
+
 header .hero-img {
     width: 100%;
     background-image: url("images/Background-Img.png");
