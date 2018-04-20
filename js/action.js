@@ -1,34 +1,4 @@
 // Image loading animation //
-<<<<<<< HEAD
-var counting = 0;
-
-$(window).scroll(function() {
-    $(".col").each(function() {
-        var top_of_element = $(this).offset().top;
-        var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-        var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
-        var top_of_screen = $(window).scrollTop();
-        var offset = $(this).offset();
-        var curr = $(this);
-
-        // The element is visible, do something
-        // If 10 elements have loaded, load the rest
-        if (counting >= 10) {
-            setTimeout(function(){
-                curr.addClass("animate");
-            },offset.left);
-        }
-        else if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-            if (!curr.hasClass("animate")) {
-                setTimeout(function(){
-                    curr.addClass("animate");
-                    counting = (counting+1);
-                },offset.left);
-            };
-        };
-    });
-});
-=======
 // $(window).scroll(function() {
     
 
@@ -50,7 +20,6 @@ $(window).scroll(function() {
 //         };
 //     });
 // });
->>>>>>> master
 
 // Content filter //
 
