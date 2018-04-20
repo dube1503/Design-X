@@ -110,10 +110,10 @@ h5 {
 p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 1.1875em;
+    font-size: .85em;
     letter-spacing: .075em;
     padding-bottom: 2px;
-    color: white;
+    color: #FAF1E0;
     text-shadow: rgba(0,0,0,.4) 2px 2px 5px;
 }
 
