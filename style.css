@@ -167,6 +167,7 @@ header .info h5, header .info h4 {
 main .filter-wrapper {
     padding-left: 7.5%;
     background-color: #E8A631;
+    padding-bottom: 10px;
 }
 
 div.filter-title {
