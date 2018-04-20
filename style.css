@@ -201,6 +201,8 @@ ul#filter li a {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
     font-size: 1.125em;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 ul#filter li a:hover {
