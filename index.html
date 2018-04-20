@@ -5,8 +5,8 @@
         <meta charset="UTF-8" />
         
         <!--Don't forget to fill these out!-->
-        <title>Design-X</title>
-        <meta name="Coming Soon" content="Stay tuned for when the portfolio site goes live on April 26th!." />
+        <title>Design X</title>
+        <meta name="description" content="ComDes Exit Review for Spring 2018" />
         
         <!--Links to the main Style Sheet-->
         <link href="style.css" rel="stylesheet" type="text/css" />
@@ -15,29 +15,538 @@
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
         <!-- Links to Google Fonts for brand -->
-        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,700|Montserrat:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700|Montserrat:600" rel="stylesheet">
         
         <!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers-->
         <script src="js/modernizr.js"></script>
         
         <!--Makes the site so it won't scale down on small devices -->
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <!--Info for Website when linked on Facebook-->
+        <meta property="og:image" content="images/thumbnail.jpg">
+        <meta property="og:description" content="Design X, design is people. Texas State Communication Design Exit Review for Spring 2018. May 3 at 6pm.">
+        <meta property="og:title" content="Design X">
+
+        <!--Info for Website when linked on Twitter-->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@ComDesReview" />
+        <meta name="twitter:title" content="Design X" />
+        <meta name="twitter:description" content="Design X, design is people. Texas State Communication Design Exit Review for Spring 2018. May 3 at 6pm." />
+        <meta name="twitter:image" content="images/thumbnail.jpg" />
     </head>
 
     <body>
 
-        <div id="bubble">
-            <img src="images/coming-soon.gif">
-        </div>
+        <div id="wrapper">
 
-        <div id="info">
-            <h2>texas state university</h2>
-            <h1>ComDes Exit Review, Spring '18</h1>
+    <!-- header -->
+
+            <header>
+
+                <div class="hero-img"></div>
+
+                <div class="brand">
+                    <h1>Design X</h1>
+                    <h3>design is people.</h3>
+                </div>
+
+                <div class="info">
+                    <h5>Texas State University</h5>
+                    <h4>ComDes Exit Review</h4>
+                    <h5>Thursday, May 3rd | 6 &ndash; 9 pm</h5>
+                    <h5>Fjord, 319 Congress Ave</h5>
+                    <h5>Suite #200, Austin, Texas</h5>
+                </div>
+
+            </header>
+
+    <!-- end header -->
+
+    <!-- content -->
+
+            <main>
+                
+                <div class="filter-wrapper">
+
+                    <div class="filter-title">
+                        <h2>
+                            show me the 
+                            <div class="active-sort">&emsp; &emsp; &emsp;</div>
+                            people
+                        </h2>
+                    </div>
+
+                    <div class="filter-tab">
+                    
+                        <ul id="filter">
+                            <li class="filter">
+                                <a id="filter-btn" class="selected" href="#0" data-filter="all">All</a>
+                            </li>
+                            <li class="filter">
+                                <a id="filter-btn" class="" href="#0" data-filter=".art-direction">Art Direction</a>
+                            </li>
+                            <li class="filter">
+                                <a id="filter-btn" class="" href="#0" data-filter=".branding">Branding</a>
+                            </li>
+                            <li class="filter">
+                                <a id="filter-btn" class="" href="#0" data-filter=".front-end-dev">Front End Dev</a>
+                            </li>
+                            <li class="filter">
+                                <a id="filter-btn" class="" href="#0" data-filter=".illustration">Illustration</a>
+                            </li>
+                            <li class="filter">
+                                <a id="filter-btn" class="" href="#0" data-filter=".photography">Photography</a>
+                            </li>
+                            <li class="filter">
+                                <a id="filter-btn" class="" href="#0" data-filter=".typography">Typography</a>
+                            </li>
+                            <li class="filter">
+                                <a id="filter-btn" class="" href="#0" data-filter=".publication">Publication</a>
+                            </li>
+                            <li class="filter">
+                                <a id="filter-btn" class="" href="#0" data-filter=".trademark">Trademark</a>
+                            </li>
+                            <li class="filter">
+                                <a id="filter-btn" class="" href="#0" data-filter=".ux-design">UX Design</a>
+                            </li>
+                            <li class="filter">
+                                <a id="filter-btn" class="" href="#0" data-filter=".ui-design">UI Design</a>
+                            </li>
+                            <li class="filter">
+                                <a id="filter-btn" class="" href="#0" data-filter=".thrD-design">3D Design</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg-filters">
+                  <filter id="duotone_blue">
+                    
+                    <feComponentTransfer color-interpolation-filters="sRGB" result="duotone_blue_cream">
+                      <feFuncR type="table" tableValues="0.09803922 0.94509804"></feFuncR>
+                      <feFuncG type="table" tableValues="0.19215686 0.90980392"></feFuncG>
+                      <feFuncB type="table" tableValues="0.28235294 0.84313725"></feFuncB>
+                      <feFuncA type="table" tableValues="0 1"></feFuncA>
+                    </feComponentTransfer> 
+                  </filter>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg-filters">
+                  <filter id="duotone_red">
+                    
+                    <feComponentTransfer color-interpolation-filters="sRGB" result="duotone_red_cream">
+                      <feFuncR type="table" tableValues="0.89019608 0.94509804"></feFuncR>
+                      <feFuncG type="table" tableValues="0.31764706 0.90980392"></feFuncG>
+                      <feFuncB type="table" tableValues="0.17254902 0.84313725"></feFuncB>
+                      <feFuncA type="table" tableValues="0 1"></feFuncA>
+                    </feComponentTransfer> 
+                  </filter>
+                </svg>
+
+                <section class="gallery">
+                    <div class="grid">
+                        <a class="mix branding trademark ui-design ux-design" href="https://kristinabalbin.com" target="_blank">
+                            <img src="images/portraits/balbin_kristina.jpg">
+                            <div class="name">
+                                <p>Kristina</p>
+                                <p>Balbin</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding packaging ui-design ux-design" href="http://www.yajayrabarragan.com" target="_blank">
+                            <img src="images/portraits/barragan_yajayra.jpg">
+                            <div class="name">
+                                <p>Yajayra</p>
+                                <p>Barragan</p>
+                            </div>
+                        </a> 
+                        <a class="mix ui-design ux-design front-end-dev" href="http://www.kristiebocanegra.com" target="_blank">
+                            <img src="images/portraits/bocanegra_kristie.jpg">
+                            <div class="name">
+                                <p>Kristie</p>
+                                <p>Bocanegra</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding ui-design ux-design" href="http://rachaelbriggsdesign.com" target="_blank">
+                            <img src="images/portraits/briggs_rachael.jpg">
+                            <div class="name">
+                                <p>Rachael</p>
+                                <p>Briggs</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding trademark ux-design" href="https://jessbrowder.com" target="_blank">
+                            <img src="images/portraits/browder_jess.jpg">
+                            <div class="name">
+                                <p>Jess</p>
+                                <p>Browder</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding illustration packaging" href="http://www.elisabryan.me" target="_blank">
+                            <img src="images/portraits/bryan_elisa.jpg">
+                            <div class="name">
+                                <p>Elisa</p>
+                                <p>Bryan</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding publication trademark typography" href="https://www.libertyskycarlin.com" target="_blank">
+                            <img src="images/portraits/carlin_libertysky.jpg">
+                            <div class="name">
+                                <p>Liberty</p>
+                                <p>Carlin</p>
+                            </div>
+                        </a> 
+                        <a class="mix art-direction branding" href="https://rcatalano.com" target="_blank">
+                            <img src="images/portraits/catalano_rachel.jpg">
+                            <div class="name">
+                                <p>Rachel</p>
+                                <p>Catalano</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding trademark packaging ux-design" href="https://schica.com" target="_blank">
+                            <img src="images/portraits/chica_stephanie.jpg">
+                            <div class="name">
+                                <p>Stephanie</p>
+                                <p>Chica</p>
+                            </div>
+                        </a> 
+                        <a class="mix art-direction branding illustration" href="http://www.stephcloyd.com" target="_blank">
+                            <img src="images/portraits/cloyd_stephanie.jpg">
+                            <div class="name">
+                                <p>Stephanie</p>
+                                <p>Cloyd</p>
+                            </div>
+                        </a> 
+                        <a class="mix ui-design ux-design" href="https://www.kldsgn.com" target="_blank">
+                            <img src="images/portraits/davis_kristina.jpg">
+                            <div class="name">
+                                <p>Kristina</p>
+                                <p>Davis</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding ui-design ux-design" href="https://www.austincd.com/" target="_blank">
+                            <img src="images/portraits/dennis_austin.jpg">
+                            <div class="name">
+                                <p>Austin</p>
+                                <p>Dennis</p>
+                            </div>
+                        </a> 
+                        <a class="mix ui-design ux-design" href="http://www.domingodesigns.com" target="_blank">
+                            <img src="images/portraits/domingo_kevin.jpg">
+                            <div class="name">
+                                <p>Kevin</p>
+                                <p>Domingo</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding ui-design ux-design" href="https://www.jareddorsey.com/" target="_blank">
+                            <img src="images/portraits/dorsey_jared.jpg">
+                            <div class="name">
+                                <p>Jared</p>
+                                <p>Dorsey</p>
+                            </div>
+                        </a> 
+                        <a class="mix ui-design ux-design front-end-dev" href="http:/dube.com" target="_blank">
+                            <img src="images/portraits/dube_cole.jpg">
+                            <div class="name">
+                                <p>Cole</p>
+                                <p>Dube</p>
+                            </div>
+                        </a> 
+                        <a class="mix art-direction branding packaging" href="http://www.seelliotts.com" target="_blank">
+                            <img src="images/portraits/elliott_sierra.jpg">
+                            <div class="name">
+                                <p>Sierra</p>
+                                <p>Elliott</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding ui-design ux-design" href="Http://aemaratsaz.com" target="_blank">
+                            <img src="images/portraits/emaratsaz_ana.jpg">
+                            <div class="name">
+                                <p>Ana</p>
+                                <p>Emaratsaz</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding ui-design" href="https://www.mariannaeubank.com" target="_blank">
+                            <img src="images/portraits/eubank_marianna.jpg">
+                            <div class="name">
+                                <p>Marianna</p>
+                                <p>Eubank</p>
+                            </div>
+                        </a> 
+                        <a class="mix art-direction branding illustration trademark" href="http://calliegabbert.com" target="_blank">
+                            <img src="images/portraits/gabbert_callie.jpg">
+                            <div class="name">
+                                <p>Callie</p>
+                                <p>Gabbert</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding packaging publication" href="https://www.erin-garrigan.com/" target="_blank">
+                            <img src="images/portraits/garrigan_erin.jpg">
+                            <div class="name">
+                                <p>Erin</p>
+                                <p>Garrigan</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding ui-design ux-design" href="http://nickanthonygatti.com" target="_blank">
+                            <img src="images/portraits/gatti_nick.jpg">
+                            <div class="name">
+                                <p>Nick</p>
+                                <p>Gatti</p>
+                            </div>
+                        </a> 
+                        <a class="mix art-direction branding trademark ui-design" href="http://www.riggeddesigns.com/" target="_blank">
+                            <img src="images/portraits/gaytan_randy.jpg">
+                            <div class="name">
+                                <p>Randy</p>
+                                <p>Gaytan</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding illustration publication" href="http://hayleygompertz.com/" target="_blank">
+                            <img src="images/portraits/gompertz_hayley.jpg">
+                            <div class="name">
+                                <p>Hayley</p>
+                                <p>Gompertz</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding trademark ui-design ux-design" href="https://www.dakotahalldesign.com/" target="_blank">
+                            <img src="images/portraits/hall_dakota.jpg">
+                            <div class="name">
+                                <p>Dakota</p>
+                                <p>Hall</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding ui-design ux-design" href="http://taylor-danielle.com" target="_blank">
+                            <img src="images/portraits/hermes_taylor.jpg">
+                            <div class="name">
+                                <p>Taylor</p>
+                                <p>Hermes</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding ui-design ux-design" href="https://www.aileenhdz.com" target="_blank">
+                            <img src="images/portraits/hernandez_aileen.jpg">
+                            <div class="name">
+                                <p>Aileen</p>
+                                <p>Hernandez</p>
+                            </div>
+                        </a> 
+                        <a class="mix art-direction branding photography" href="http://www.heyreag.com" target="_blank">
+                            <img src="images/portraits/hicks_reagan.jpg">
+                            <div class="name">
+                                <p>Reagan</p>
+                                <p>McGregor</p>
+                                <p>Hicks</p>
+                            </div>
+                        </a> 
+                        <a class="mix thrD-design branding illustration" href="http://www.treyholtdesign.com" target="_blank">
+                            <img src="images/portraits/holt_trey.jpg">
+                            <div class="name">
+                                <p>Trey</p>
+                                <p>Holt</p>
+                            </div>
+                        </a> 
+                        <a class="mix packaging ui-design ux-design" href="http://www.ashleyhuntdesign.com" target="_blank">
+                            <img src="images/portraits/hunt_ashley.jpg">
+                            <div class="name">
+                                <p>Ashley</p>
+                                <p>Hunt</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding packaging trademark" href="http://www.kasprodesign.com" target="_blank">
+                            <img src="images/portraits/kasprowicz_kristina.jpg">
+                            <div class="name">
+                                <p>Kristina</p>
+                                <p>Kasprowicz</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding illustration typography ui-design" href="https://www.joekrupadesigns.com" target="_blank">
+                            <img src="images/portraits/krupa_joe.jpg">
+                            <div class="name">
+                                <p>Joe</p>
+                                <p>Krupa</p>
+                            </div>
+                        </a> 
+                        <a class="mix front-end-dev ui-design ux-design" href="http://valerielamm.com" target="_blank">
+                            <img src="images/portraits/lamm_valerie.jpg">
+                            <div class="name">
+                                <p>Valerie</p>
+                                <p>Lamm</p>
+                            </div>
+                        </a> 
+                        <a class="mix art-direction branding ui-design ux-design" href="http://www.arelgi.com" target="_blank">
+                            <img src="images/portraits/lopez_andrew_r.jpg">
+                            <div class="name">
+                                <p>Andrés</p>
+                                <p>R.</p>
+                                <p>Lopez</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding ui-design ux-design" href="https:/majeske.com" target="_blank">
+                            <img src="images/portraits/majeske_nicole.jpg">
+                            <div class="name">
+                                <p>Nicole</p>
+                                <p>Majeske</p>
+                            </div>
+                        </a> 
+                        <a class="mix thrD-design front-end-dev ui-design ux-design" href="https://www.lorenamartinezdesign.com" target="_blank">
+                            <img src="images/portraits/martinez_lorena.jpg">
+                            <div class="name">
+                                <p>Lorena</p>
+                                <p>Martinez</p>
+                            </div>
+                        </a> 
+                        <a class="mix art-direction branding illustration ui-design" href="https://www.dannymarzari.com" target="_blank">
+                            <img src="images/portraits/marzari_danny.jpg">
+                            <div class="name">
+                                <p>Danny</p>
+                                <p>Marzari</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding front-end-dev trademark ui-design" href="http://www.melendezcreates.com" target="_blank">
+                            <img src="images/portraits/melendez_ruben.jpg">
+                            <div class="name">
+                                <p>Ruben</p>
+                                <p>Melendez</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding packaging typography" href="http://www.mmmdesign.org/" target="_blank">
+                            <img src="images/portraits/moreno_michelle.jpg">
+                            <div class="name">
+                                <p>Michelle</p>
+                                <p>Moreno</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding packaging trademark typography" href="http://www.pedromoreno.design" target="_blank">
+                            <img src="images/portraits/moreno_pedro.jpg">
+                            <div class="name">
+                                <p>Pedro</p>
+                                <p>Moreno</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding trademark packaging" href="http://www.musachiadesign.com" target="_blank">
+                            <img src="images/portraits/musachia_sabrina.jpg">
+                            <div class="name">
+                                <p>Sabrina</p>
+                                <p>Musachia</p>
+                            </div>
+                        </a> 
+                        <a class="mix art-direction branding photography ui-design" href="https://www.laurentnelson.com" target="_blank">
+                            <img src="images/portraits/nelson_lauren.jpg">
+                            <div class="name">
+                                <p>Lauren</p>
+                                <p>Taylor</p>
+                                <p>Nelson</p>
+                            </div>
+                        </a> 
+                        <a class="mix ui-design ux-design" href="https://www.kristennemeth.com" target="_blank">
+                            <img src="images/portraits/nemeth_kristen.jpg">
+                            <div class="name">
+                                <p>Kristen</p>
+                                <p>Nemeth</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding illustration trademark typography" href="https://www.marina-nolen.com" target="_blank">
+                            <img src="images/portraits/nolen_marina.jpg">
+                            <div class="name">
+                                <p>Marina</p>
+                                <p>Nolen</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding publication trademark typography" href="https://erinpena.com/" target="_blank">
+                            <img src="images/portraits/pena_erin.jpg">
+                            <div class="name">
+                                <p>Erin</p>
+                                <p>Peña</p>
+                            </div>
+                        </a> 
+                        <a class="mix art-direction branding trademark ux-design" href="https://www.peytonleedesign.com" target="_blank">
+                            <img src="images/portraits/person_peyton.jpg">
+                            <div class="name">
+                                <p>Peyton</p>
+                                <p>Lee</p>
+                                <p>Person</p>
+                            </div>
+                        </a> 
+                        <a class="mix art-direction branding trademark packaging" href="https://www.katipina.com" target="_blank">
+                            <img src="images/portraits/pina_kati.jpg">
+                            <div class="name">
+                                <p>Kati</p>
+                                <p>Piña</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding illustration typography ui-design" href="http://www.megokelso.com" target="_blank">
+                            <img src="images/portraits/kelso_megan.jpg">
+                            <div class="name">
+                                <p>Megan</p>
+                                <p>Kelso</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding illustration trademark ui-design" href="http://www.matthew-rios.com" target="_blank">
+                            <img src="images/portraits/rios_matthew.jpg">
+                            <div class="name">
+                                <p>Matthew</p>
+                                <p>Rios</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding illustration ui-design ux-design" href="http://brittsavantdesign.com" target="_blank">
+                            <img src="images/portraits/savant_brittany.jpg">
+                            <div class="name">
+                                <p>Brittany</p>
+                                <p>Savant</p>
+                            </div>
+                        </a> 
+                        <a class="mix art-direction publication typography" href="https://nathansingdesign.squarespace.com/" target="_blank">
+                            <img src="images/portraits/sing_nathan.jpg">
+                            <div class="name">
+                                <p>Nathan</p>
+                                <p>Sing</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding publication typography ui-design" href="https://www.johannesmade.com" target="_blank">
+                            <img src="images/portraits/smit_peter.jpg">
+                            <div class="name">
+                                <p>Johannes</p>
+                                <p>Smit</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding packaging ui-design ux-design" href="http://kymberlitaylor.com" target="_blank">
+                            <img src="images/portraits/taylor_kymberli.jpg">
+                            <div class="name">
+                                <p>Kymberli</p>
+                                <p>Taylor</p>
+                            </div>
+                        </a> 
+                        <a class="mix branding illustration packaging ui-design" href="http://www.paolavaldes.com" target="_blank">
+                            <img src="images/portraits/valdes_paola.jpg">
+                            <div class="name">
+                                <p>Paola</p>
+                                <p>Valdes</p>
+                            </div>
+                        </a> 
+                    </div>
+                </section>
+            </main>
+
+    <!-- end content -->
+
+    <!-- footer -->
+    <!-- end footer -->
+
+    </div>
             
-            <p>Site launches April 26th!</p>
-        </div>
+        </body>
 
-    </body>
-    
-    <script type="text/javascript" src="action.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="js/action.js"></script>
+
+  <script type="text/javascript" src="js/mixitup.min.js"></script>
+
+  <script type="text/javascript">
+      var containerEl = document.querySelector('.grid');
+      var mixer = mixitup(containerEl);
+  </script>
+
 </html>

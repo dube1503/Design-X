@@ -1,4 +1,5 @@
 // Image loading animation //
+<<<<<<< HEAD
 var counting = 0;
 
 $(window).scroll(function() {
@@ -27,35 +28,57 @@ $(window).scroll(function() {
         };
     });
 });
+=======
+// $(window).scroll(function() {
+    
+
+//     $(".mix").each(function() {
+//         var top_of_element = $(".grid").offset().top;
+//         var bottom_of_element = $(".grid").offset().top + $(this).outerHeight();
+//         var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
+//         var top_of_screen = $(window).scrollTop();
+//         var offset = $(this).offset();
+//         var curr = $(this);
+
+//         if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+//             // The element is visible, do something
+//             if (!curr.hasClass("animate")) {
+//                 setTimeout(function(){
+//                     curr.addClass("animate");
+//                 },offset.left);
+//             };
+//         };
+//     });
+// });
+>>>>>>> master
 
 // Content filter //
 
 $(document).on("click", "a#filter-btn", function() {
     if(!$(this).hasClass("selected")) {
-            // Remove previous selected and change to current //
-            $(".selected").removeClass("selected");
-            $(this).addClass("selected");
-            // Dump text from selected title and replace with current //
-            $(".active-sort").empty();
-            $(".active-sort").append($(this).attr("data-type"))
-            // Sort images according to selection //
-            $(".col").each(function() {
-                // If the Design (ALL) option is selected
-                if ($(".selected").attr("data-type")==="Design") {
-                    // Make sure all images are visible //
-                    if ($(this).hasClass("hidden")) {
-                        $(this).removeClass("hidden");
-                    };
-                }
-                // Check which images DO NOT MATCH the selection //
-                else if (!$(this).hasClass($(".selected").attr("data-type"))) {
-                    // If tag isnt found in image, hide it //
-                    $(this).addClass("hidden");
-                };
-                // Make sure all images that match selection are showing //
-                if ($(this).hasClass($(".selected").attr("data-type")) && $(this).hasClass("hidden")) {
-                    $(this).removeClass("hidden");
-                };
-            });
+        // Remove previous selected and change to current //
+        $(".selected").removeClass("selected");
+        $(this).addClass("selected");
+        // Dump text from selected title and replace with current //
+        $(".active-sort").empty();
+        // Convert data-filter to string
+        var str = $(this).attr("data-filter");
+        // Strip string of extra characters
+        str = str.replace(/[.-]/g, ' ');
+        // Check what string is selected
+        switch (str) {
+            // If 'all' selected, insert empty space to sort
+            case 'all':
+                $(".active-sort").append('&emsp; &emsp; &emsp;');
+                break;
+            // If 'thrD' selected, insert '3d' to sort
+            case ' thrD design':
+                $(".active-sort").append('3d design');
+                break;
+            // Else, insert converted text
+            default:
+                $(".active-sort").append(str);
         };
+    };
 });
+
