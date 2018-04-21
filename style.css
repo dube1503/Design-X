@@ -110,10 +110,10 @@ h5 {
 p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 1.1875em;
+    font-size: .85em;
     letter-spacing: .075em;
     padding-bottom: 2px;
-    color: white;
+    color: #FAF1E0;
     text-shadow: rgba(0,0,0,.4) 2px 2px 5px;
 }
 
@@ -167,6 +167,7 @@ header .info h5, header .info h4 {
 main .filter-wrapper {
     padding-left: 7.5%;
     background-color: #E8A631;
+    padding-bottom: 10px;
 }
 
 div.filter-title {
@@ -205,6 +206,8 @@ ul#filter li a {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
     font-size: 1.125em;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 ul#filter li a:hover {
