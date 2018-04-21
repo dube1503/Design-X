@@ -49,8 +49,8 @@ table {
 /* End of Meyer Reset CSS */
 
 img {
-	max-width: 100%; /*makes images scale with flexible grids*/
-	display: block; /*removes tiny space added in some browsers below images */
+    max-width: 100%; /*makes images scale with flexible grids*/
+    display: block; /*removes tiny space added in some browsers below images */
 }
 
 a {
@@ -176,15 +176,45 @@ div.filter-title {
     padding: 35px 0 23px 0;
 }
 
+div.filter-title a.drop-btn {
+    background-image: url('images/drop-arrow.png');
+    display: inline-block;
+    width: 26px;
+    height: 18px;
+    margin-left: 10px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    transition: -webkit-transform .5s ease-in;
+    transition: transform .5s ease-in;
+    transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+}
+
+div.filter-title a.drop-btn.rotated {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+}
+
+
 div.filter-title h2 {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
 }
 
 div.filter-title h2 .active-sort {
     display: inline-block;
-    border-bottom: thick dotted #FAF1E0;
+    border-bottom: thick dotted #EC512C;
     padding-bottom: 5px;
+}
+
+div.filter-tab {
+    height: auto;
+    overflow: hidden;
+    max-height: 90px;
+    transition: max-height .5s ease-in;
+}
+
+div.filter-tab.collapsed {
+    max-height: 0;
 }
 
 ul#filter {
@@ -241,7 +271,9 @@ ul#filter li a.selected {
     width: 85%;
     margin: 20px auto;
 
-    perspective: 1300px;
+    -webkit-perspective: 1300px;
+
+            perspective: 1300px;
 }
 
 .mix {
@@ -250,19 +282,17 @@ ul#filter li a.selected {
     margin: 5px;
 
     position: relative;
-
-    transform-style: preserve-3d;
-
-    transition: width 1s;
 }
 
 section.gallery .grid .mix img:hover {
-    filter: url('#duotone_red');
+    -webkit-filter: url('#duotone_red');
+            filter: url('#duotone_red');
 }
 
 section.gallery .grid .mix img {
     position: absolute;
-    filter: url('#duotone_blue');
+    -webkit-filter: url('#duotone_blue');
+            filter: url('#duotone_blue');
 }
 
 section.gallery .grid .mix .name {

@@ -28,3 +28,17 @@ $(document).on("click", "a#filter-btn", function() {
     };
 });
 
+// $(document).on("click", ".div-title h2::after", function() {
+//     if() {};
+// });
+
+$( "a.drop-btn" ).click(function() {
+    if (!$(this).hasClass("rotated")){
+        $(this).addClass("rotated");
+        $(".filter-tab").removeClass("collapsed");
+    } else {
+        $(this).removeClass("rotated");
+        $(".filter-tab").addClass("collapsed");
+    }
+});
+
