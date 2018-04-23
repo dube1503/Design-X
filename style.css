@@ -310,7 +310,7 @@ section.gallery .grid .mix .name {
 
 
 
-/* -------------------Responsive Mobile starts here 750-480--------------------------------- */
+/* -------------------Responsive Mobile starts here 360--------------------------------- */
 
 @media screen and (max-width:700px)  {
 
@@ -322,35 +322,35 @@ section.gallery .grid .mix .name {
 h1 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 700;
-    font-size: 3.3125em;
+    font-size: 3em;
     color: #FAF1E0;
 }
 
 h2 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 500;
-    font-size: 1.4em;
+    font-size: 1.625em;
     color: #FAF1E0;
 }
 
 h3 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
-    font-size: 1em;
+    font-size: 0.85em;
     color: #F1AF31;
 }
 
 h4 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
-    font-size: 1.2875em;
+    font-size: 1.1875em;
     color: #FAF1E0;
 }
 
 h5 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
-    font-size: .925em;
+    font-size: 0.8125em;
     color: #FAF1E0;
 }
 
@@ -368,16 +368,18 @@ p {
 
 header {
     background: linear-gradient(to right, #4fa0e9 , #4082be);
+ 
     
 }
 
 header .hero-img {
     width: 100%;
-   
+  
     background-image: url("images/mobile-hero.png");
-    background-size:cover;
+    background-size:100%;
+   
     background-repeat: no-repeat;
-    padding-top: 45em;/*?*/
+    padding-top: 35.5em;/*?*/
     
     
     }
@@ -388,16 +390,17 @@ header .brand, header .info {
 }
 
 header .brand {
-    top: 5.5rem;
+    top: 4.5rem;
 }
 
 header .brand h3 {
     text-align: right;
-    margin-top: 1.5rem;
+    margin-top: .875rem;
 }
 
 header .info {
-    top: 37.125em;
+    top: 27.825em;
+    line-height: .8em;
 }
 
 header .info h5, header .info h4 {
@@ -409,19 +412,34 @@ header .info h5, header .info h4 {
 
 main .filter-wrapper {
     padding-left: 7.5%;
+    padding-right: 7.5%;
     background-color: #E8A631;
-    padding-bottom: 10px;
-   
+    padding-bottom: .625;
+    float: left;
+  
 }
 
 div.filter-title {
     width: 100%;
-    align-content: center;
+    overflow: hidden;
     padding: 35px 0 23px 0;
 }
 
 
-
+div.filter-title a.drop-btn {
+    background-image: url('images/drop-arrow.png');
+    display: inline-block;
+   float: right;
+    width: 26px;
+    height: 18px;
+ 
+    margin-left: 10px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    transition: -webkit-transform .5s ease-in;
+    transition: transform .5s ease-in;
+    transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+}
 
 
 div.filter-title h2 {
@@ -450,7 +468,7 @@ ul#filter {
 
 ul#filter li {
     display: inline-block;
-    width: 40%;
+    width: 49.3%;
     padding-bottom: 25px;
 }
 
@@ -469,14 +487,26 @@ ul#filter li a {
 
 
     
-/* Mobile Portfolio Portrait Gallery */
-    .mix {
-    padding-bottom: 11.6em;
-    width: 11.625rem;
-    margin: .3125em;
+/* Mobile Portfolio Portrait Gallery Android 360*/
+
+
+ .mix {
+    padding-bottom: 8.3em;
+    width: 46%;
+    
     position: relative;
 }
-    
+
+
+
+section.gallery .grid .mix .name {
+    position: absolute;
+    bottom: 0.15em;
+    left: .75em;
+}
+
+
+
     
     
     
