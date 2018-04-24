@@ -269,7 +269,7 @@ ul#filter li a.selected {
     flex-wrap: wrap;
     padding: 5px;
     width: 85%;
-    margin: 20px auto 100px;
+    margin: 10% auto 100px;
 }
 
 .mix {
@@ -379,4 +379,30 @@ footer #bottom #location p.fjord {
     margin-top: 5px;
 }
 
+/*<-------------- MEDIA QUERIES ---------------->*/
 
+@media screen and (min-width:320px) {
+    
+    
+    header h4 {
+        
+        float:left;
+        margin-top:3rem;
+        margin-left:10%;
+        
+    }
+    
+   .grid {
+    display: flex;
+    align-content: flex-start;
+    flex-flow: row;
+    flex-wrap: wrap;
+    padding: 5px;
+    width: 85%;
+    margin: 20px auto 100px;
+}
+    
+    
+    
+    
+}
