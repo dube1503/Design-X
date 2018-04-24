@@ -305,6 +305,8 @@ section.gallery .grid .mix .name {
     pointer-events:none;
 }
 
+/* <-------- MEDIA QUERIES -----------> */ 
 
-
-
+@media screen and (max-width:768px) {
+    
+}
