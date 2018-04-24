@@ -379,64 +379,6 @@ footer #bottom #location p.fjord {
     font-size: 1em;
     margin-top: 5px;
 }
-
-/*<-------------- MEDIA QUERIES ---------------->*/
-
-@media screen and (min-width:320px) and (max-width:768px) {
-    
-    header {
-    background: linear-gradient(to right, #4fa0e9 , #4082be);
-    }
-
-    header .hero-img {
-    width: 100%;
-    background-image: url("images/Background-Img.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 0;
-    padding-top: 60.139%;
-    }
-
-    header .brand, header .info {
-    position: absolute;
-    left: 7.5%;
-    }
-
-    header .brand {
-    top: 213px;
-    }
-
-    header .brand h3 {
-    text-align: right;
-    margin-top: 30px;
-    }
-
-    header .info {
-    top: 562px;
-    }
-
-    header .info h5, header .info h4 {
-    margin-bottom: 7px;
-    letter-spacing: .05em;
-    }
-
-    
-    ul#filter li {
-    display: inline-block;
-    width: 45%;
-    padding-bottom: 25px;
-    }
-    
-    div.filter-tab {
-    height: auto;
-    overflow: hidden;
-    max-height: 250px;
-    transition: max-height .5s ease-out;
-    }
-    
-    
-    }
-    
  
 
 /* -------------------Responsive Mobile starts here 360--------------------------------- */
@@ -648,3 +590,4 @@ section.gallery .grid .mix .name {
 }
 
 
+}
