@@ -275,6 +275,7 @@ ul#filter li a.selected {
 .mix {
     padding-bottom: 18%;
     width: 18%;
+    display: inline-table;
 
     margin: 5px;
 
