@@ -588,66 +588,7 @@ section.gallery .grid .mix .name {
 .name {
     pointer-events:none;
 }
- 
-    footer {
-    background-color: #EC512C;
-    padding: 25px 7.5% 60px 7.5%;
-    }
-    
-    footer p {
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 400;
-    font-size: 1.25em;
-    text-shadow: none;
-    letter-spacing: 0.025em;
-    line-height:1.5rem;
-}
 
-footer #sponsors {
-    display: flex;
-    align-content: flex-start;
-    flex-flow: row;
-    flex-wrap: wrap;
-    margin: 50px auto;
-    width: 100%;
-    justify-content: space-between;
-}
-
-footer #sponsors img {
-    width: 15%;
-    max-height: 130px;
-    margin: 0 2% 50px 2%;
-}
-
-<<<<<<< HEAD
-footer #bottom {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 40px;
-}
-
-footer #bottom #mark {
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 300;
-    font-size: 2em;
-    color: #FAF1E0;
-}
-
-footer #bottom #mark strong {
-    font-weight: 500;
-}
-
-footer #bottom #social {
-    width: 20%;
-}
-
-footer #bottom #social .logos {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 25px;
-}
-
-=======
 
 
 
@@ -889,22 +830,6 @@ footer #bottom #social .logos img {
 }
 
 footer #bottom #location {
-    line-height: 1.5em;
-}
-
-footer #bottom #location p.adrss {
-    font-size: 1em;
-    font-weight: 300;
-}
-
-footer #bottom #location p.fjord {
-    font-weight: 400;
-    font-size: 1em;
-    margin-top: 5px;
-}
-
-    
-}
     margin-top: 35px;
 }
     
@@ -983,4 +908,3 @@ footer #bottom #location #locale {
         padding-bottom: 30%;
     }
 }
-
