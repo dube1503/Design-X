@@ -381,220 +381,11 @@ footer #bottom #location p.fjord {
     margin-top: 5px;
 }
 
-/* -------------------Responsive Mobile starts here 360--------------------------------- */
-
-@media screen and (max-width:700px)  {
-
-    
-
-    
-    /* Responsive Mobile Text Styles */
-    
-h1 {
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 700;
-    font-size: 3em;
-    color: #FAF1E0;
-}
-
-h2 {
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 500;
-    font-size: 1.625em;
-    color: #FAF1E0;
-}
-
-h3 {
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 300;
-    font-size: 0.85em;
-    color: #F1AF31;
-}
-
-h4 {
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 400;
-    font-size: 1.1875em;
-    color: #FAF1E0;
-}
-
-h5 {
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 300;
-    font-size: 0.8125em;
-    color: #FAF1E0;
-}
-
-p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: .85em;
-    letter-spacing: .075em;
-    padding-bottom: 2px;
-    color: #FAF1E0;
-    text-shadow: rgba(0,0,0,.4) 2px 2px 5px;
-}
-    
-/* Mobile Header Styles */
-
-header {
-    background: linear-gradient(to right, #4fa0e9 , #4082be);
- 
-    
-}
-
-header .hero-img {
-    width: 100%;
-  
-    background-image: url("images/mobile-hero.png");
-    background-size:100%;
-   
-    background-repeat: no-repeat;
-    padding-top: 33em;/*?*/
-    
-    
-    }
-
-header .brand, header .info {
-    position: absolute;
-    left: 7.5%;
-}
-
-header .brand {
-    top: 4.5rem;
-}
-
-header .brand h3 {
-    text-align: right;
-    margin-top: .875rem;
-}
-
-header .info {
-    top: 26.825em;
-    line-height: .8em;
-}
-
-header .info h5, header .info h4 {
-    margin-bottom: 7px;
-    letter-spacing: .05em;
-}
-    
-/* Mobile Content Filter */
-
-main .filter-wrapper {
-    padding-left: 7.5%;
-    padding-right: 7.5%;
-    background-color: #E8A631;
-    padding-bottom: .625;
-    float: left;
-  
-}
-
-div.filter-title {
-    width: 100%;
-    overflow: hidden;
-    padding: 35px 0 23px 0;
-}
 
 
-div.filter-title a.drop-btn {
-    background-image: url('images/drop-arrow.png');
-    display: inline-block;
-   float: right;
-    width: 26px;
-    height: 18px;
- 
-    margin-left: 10px;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    transition: -webkit-transform .5s ease-in;
-    transition: transform .5s ease-in;
-    transition: transform .5s ease-in, -webkit-transform .5s ease-in;
-}
+/* -------------------Responsive Mobile starts here 425--------------------------------- */
 
-
-div.filter-title h2 {
-    display: inline-block;
-    margin: 0 auto;
-}
-
-div.filter-title h2 .active-sort {
-    display: inline-block;
-    border-bottom: thick dotted #EC512C;
-    padding-bottom: 5px;
-}
-
-div.filter-tab {
-    height: auto;
-    overflow: hidden;
-    max-height: 30.625em;
-    transition: max-height .5s ease-in;
-}
-
-
-ul#filter {
-    margin: 0 auto;
-    text-align: left;
-}
-
-ul#filter li {
-    display: inline-block;
-    width: 49.3%;
-    padding-bottom: 25px;
-}
-
-ul#filter li a {
-    margin: 0 auto;
-    display: block;
-    color: #FAF1E0;
-    text-decoration: none;
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 300;
-    font-size: 1.125em;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
-
-
-
-    
-/* Mobile Portfolio Portrait Gallery Android 360*/
-.mix {
-    padding-bottom: 18%;
-    width: 46%;
-
-    margin: 5px;
-
-    position: relative;
-}
-
-section.gallery .grid .mix img:hover {
-    -webkit-filter: url('#duotone_red');
-            filter: url('#duotone_red');
-}
-
-section.gallery .grid .mix img {
-    position: absolute;
-    -webkit-filter: url('#duotone_blue');
-            filter: url('#duotone_blue');
-}
-
-section.gallery .grid .mix .name {
-    position: absolute;
-    bottom: 11px;
-    left: 20px;
-}
-
-.name {
-    pointer-events:none;
-}
-
-
-
-
-/* -------------------Responsive Mobile starts here 360--------------------------------- */
-
-@media screen and (max-width:700px)  {
+@media screen and (max-width:425px)  {
 
     
 
@@ -843,7 +634,7 @@ footer #bottom #location #locale {
 
 
 /******** Desktop Starts Here ********/
-@media screen and (min-width:768px){
+@media screen and (max-width:768px) and (min-width: 426px){
     
     h1{
         font-size: 3.75em;
@@ -864,8 +655,6 @@ footer #bottom #location #locale {
     p{
         font-size: 1.15em;
     }
-    
-    
     
     
     header .hero-img{
