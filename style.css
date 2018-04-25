@@ -269,7 +269,7 @@ ul#filter li a.selected {
     flex-wrap: wrap;
     padding: 5px;
     width: 85%;
-    margin: 10% auto 100px;
+    margin: 20px auto 100px;
 }
 
 .mix {
@@ -359,10 +359,11 @@ footer #bottom #social .logos {
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
+    max-width: 150px;
 }
 
 footer #bottom #social .logos img {
-    height: 40px;
+    height: 30px;
 }
 
 footer #bottom #location {
@@ -618,6 +619,7 @@ footer #sponsors img {
     margin: 0 2% 50px 2%;
 }
 
+<<<<<<< HEAD
 footer #bottom {
     display: flex;
     justify-content: space-between;
@@ -645,6 +647,243 @@ footer #bottom #social .logos {
     margin-top: 25px;
 }
 
+=======
+
+
+
+/* -------------------Responsive Mobile starts here 360--------------------------------- */
+
+@media screen and (max-width:700px)  {
+
+    
+
+    
+    /* Responsive Mobile Text Styles */
+    
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    color: #FAF1E0;
+}
+
+h2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.625em;
+    color: #FAF1E0;
+}
+
+h3 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.85em;
+    color: #F1AF31;
+}
+
+h4 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.1875em;
+    color: #FAF1E0;
+}
+
+h5 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.8125em;
+    color: #FAF1E0;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: .85em;
+    letter-spacing: .075em;
+    padding-bottom: 2px;
+    color: #FAF1E0;
+    text-shadow: rgba(0,0,0,.4) 2px 2px 5px;
+}
+    
+/* Mobile Header Styles */
+
+header {
+    background: linear-gradient(to right, #4fa0e9 , #4082be);
+ 
+    
+}
+
+header .hero-img {
+    width: 100%;
+  
+    background-image: url("images/mobile-hero.png");
+    background-size:100%;
+   
+    background-repeat: no-repeat;
+    padding-top: 35.5em;/*?*/
+    
+    
+    }
+
+header .brand, header .info {
+    position: absolute;
+    left: 7.5%;
+}
+
+header .brand {
+    top: 4.5rem;
+}
+
+header .brand h3 {
+    text-align: right;
+    margin-top: .875rem;
+}
+
+header .info {
+    top: 27.825em;
+    line-height: .8em;
+}
+
+header .info h5, header .info h4 {
+    margin-bottom: 7px;
+    letter-spacing: .05em;
+}
+    
+/* Mobile Content Filter */
+
+main .filter-wrapper {
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    background-color: #E8A631;
+    padding-bottom: .625;
+    float: left;
+  
+}
+
+div.filter-title {
+    width: 100%;
+    overflow: hidden;
+    padding: 35px 0 23px 0;
+}
+
+
+div.filter-title a.drop-btn {
+    background-image: url('images/drop-arrow.png');
+    display: inline-block;
+   float: right;
+    width: 26px;
+    height: 18px;
+ 
+    margin-left: 10px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    transition: -webkit-transform .5s ease-in;
+    transition: transform .5s ease-in;
+    transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+}
+
+
+div.filter-title h2 {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+div.filter-title h2 .active-sort {
+    display: inline-block;
+    border-bottom: thick dotted #EC512C;
+    padding-bottom: 5px;
+}
+
+div.filter-tab {
+    height: auto;
+    overflow: hidden;
+    max-height: 30.625em;
+    transition: max-height .5s ease-in;
+}
+
+
+ul#filter {
+    margin: 0 auto;
+    text-align: left;
+}
+
+ul#filter li {
+    display: inline-block;
+    width: 49.3%;
+    padding-bottom: 25px;
+}
+
+ul#filter li a {
+    margin: 0 auto;
+    display: block;
+    color: #FAF1E0;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.125em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+
+    
+/* Mobile Portfolio Portrait Gallery Android 360*/
+
+
+ .mix {
+    padding-bottom: 46%;
+    width: 46%;
+    
+    position: relative;
+}
+
+
+
+section.gallery .grid .mix .name {
+    position: absolute;
+    bottom: 0.15em;
+    left: .75em;
+}
+
+
+/* Mobile Footer Styling */
+
+footer p {
+    text-align: center;
+}
+
+footer #sponsors {
+    width: 90%;
+    margin-top: 25px;
+}
+
+footer #sponsors img {
+    width: 40%;
+    margin: 0;
+    max-height: 80px;
+    margin: 15px 0 10px 0;
+}
+
+footer #bottom {
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+footer #bottom > div {
+    flex: 100%;
+}
+
+footer #bottom #mark {
+    display: none;
+}
+
+footer #bottom #social .logos {
+    width: 60%;
+    margin: 25px auto;
+    max-width: none;
+}
+
 footer #bottom #social .logos img {
     height: 40px;
 }
@@ -666,3 +905,82 @@ footer #bottom #location p.fjord {
 
     
 }
+    margin-top: 35px;
+}
+    
+footer #bottom #location #locale {
+    margin-bottom: 25px;
+}
+
+
+    
+}
+
+
+/******** Desktop Starts Here ********/
+@media screen and (min-width:768px){
+    
+    h1{
+        font-size: 3.75em;
+    }
+    
+    h3{
+        font-size: 1.5625em;
+    }
+    
+    h4{
+        font-size: 1.1875em;
+    }
+    
+    h5{
+        font-size: .8em;
+    }
+    
+    p{
+        font-size: 1.15em;
+    }
+    
+    
+    
+    
+    header .hero-img{
+        background-image: url("images/tablet_header.jpg");
+        padding-top: 67.139%;
+        
+    }
+    
+    header .brand{
+        top: 70px;
+    }
+    
+    header .brand h3{
+        text-align: left;
+        margin-top: 15px;
+    }
+    
+    header .info{
+        top:290px;
+    }
+    
+    
+    
+    
+    ul#filter li{
+        width:23%;
+    }
+    
+    div.filter-tab{
+        max-height: 125px;
+    }
+    
+    
+    
+    
+    
+    .mix{
+        margin: 5px;
+        width: 31%;
+        padding-bottom: 30%;
+    }
+}
+
