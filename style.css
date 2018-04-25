@@ -58,12 +58,12 @@ a {
 }
 
 html,body {
-    left: 0;
+    left: 0em;
     width:100%;
     height: 100%;
 
     display: block;
-    margin-top:0;
+    margin-top:0em;
 }
 
 body {
@@ -112,7 +112,7 @@ p {
     font-weight: 600;
     font-size: .85em;
     letter-spacing: .075em;
-    padding-bottom: 2px;
+    padding-bottom: .125em;
     color: #FAF1E0;
     text-shadow: rgba(0,0,0,.4) 2px 2px 5px;
 }
@@ -145,20 +145,20 @@ header .brand, header .info {
 }
 
 header .brand {
-    top: 213px;
+    top: 13.3125em;
 }
 
 header .brand h3 {
     text-align: right;
-    margin-top: 30px;
+    margin-top: 1.875em;
 }
 
 header .info {
-    top: 562px;
+    top: 35.125em;
 }
 
 header .info h5, header .info h4 {
-    margin-bottom: 7px;
+    margin-bottom: .4375em;
     letter-spacing: .05em;
 }
 
@@ -167,20 +167,20 @@ header .info h5, header .info h4 {
 main .filter-wrapper {
     padding-left: 7.5%;
     background-color: #E8A631;
-    padding-bottom: 10px;
+    padding-bottom: .625em;
 }
 
 div.filter-title {
     width: 100%;
     align-content: center;
-    padding: 35px 0 23px 0;
+    padding: 2.1875em 0 1.4375em 0;
 }
 
 div.filter-title a.drop-btn {
     background-image: url('images/drop-arrow.png');
     display: inline-block;
     width: 26px;
-    height: 18px;
+    height: 1.125em;
     margin-left: 10px;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -202,7 +202,7 @@ div.filter-title h2 {
 div.filter-title h2 .active-sort {
     display: inline-block;
     border-bottom: thick dotted #EC512C;
-    padding-bottom: 5px;
+    padding-bottom: .3125em;
 }
 
 div.filter-tab {
@@ -224,7 +224,7 @@ ul#filter {
 ul#filter li {
     display: inline-block;
     width: 16%;
-    padding-bottom: 25px;
+    padding-bottom: 1.5625em;
 }
 
 ul#filter li a {
@@ -269,7 +269,7 @@ ul#filter li a.selected {
     flex-wrap: wrap;
     padding: 5px;
     width: 85%;
-    margin: 20px auto 100px;
+    margin: 1.25em auto 6.25em;
 }
 
 .mix {
@@ -277,7 +277,7 @@ ul#filter li a.selected {
     width: 18%;
     display: inline-table;
 
-    margin: 5px;
+    margin: 31.25%;
 
     position: relative;
 }
@@ -307,7 +307,7 @@ section.gallery .grid .mix .name {
 
 footer {
     background-color: #EC512C;
-    padding: 25px 7.5% 60px 7.5%;
+    padding: 1.5625em 7.5% 3.75em 7.5%;
 }
 
 footer p {
@@ -323,7 +323,7 @@ footer #sponsors {
     align-content: flex-start;
     flex-flow: row;
     flex-wrap: wrap;
-    margin: 50px auto;
+    margin: 3.125em auto;
     width: 100%;
     justify-content: space-between;
 }
@@ -331,13 +331,13 @@ footer #sponsors {
 footer #sponsors img {
     width: 15%;
     max-height: 130px;
-    margin: 0 2% 50px 2%;
+    margin: 0 2% 3.125em 2%;
 }
 
 footer #bottom {
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 2.5em;
 }
 
 footer #bottom #mark {
@@ -358,7 +358,7 @@ footer #bottom #social {
 footer #bottom #social .logos {
     display: flex;
     justify-content: space-between;
-    margin-top: 25px;
+    margin-top: 1.5625em;
     max-width: 150px;
 }
 
@@ -378,7 +378,7 @@ footer #bottom #location p.adrss {
 footer #bottom #location p.fjord {
     font-weight: 400;
     font-size: 1em;
-    margin-top: 5px;
+    margin-top: .3125em;
 }
 
 /* -------------------Responsive Mobile starts here 360--------------------------------- */
@@ -842,7 +842,7 @@ footer #bottom #location #locale {
 }
 
 
-/******** Desktop Starts Here ********/
+/******** Tablet Starts Here ********/
 @media screen and (min-width:768px){
     
     h1{
