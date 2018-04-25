@@ -383,7 +383,7 @@ footer #bottom #location p.fjord {
 
 
 
-/* -------------------Responsive Mobile starts here 425--------------------------------- */
+/* -------------------Responsive Mobile Large starts here 425--------------------------------- */
 
 @media screen and (max-width:425px)  {
 
@@ -395,35 +395,35 @@ footer #bottom #location p.fjord {
 h1 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 700;
-    font-size: 3em;
+    font-size: 3.685em;
     color: #FAF1E0;
 }
 
 h2 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 500;
-    font-size: 1.625em;
+    font-size: 1.9375em;
     color: #FAF1E0;
 }
 
 h3 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
-    font-size: 0.85em;
+    font-size: 1.0625em;
     color: #F1AF31;
 }
 
 h4 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
-    font-size: 1.1875em;
+    font-size: 1.375em;
     color: #FAF1E0;
 }
 
 h5 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
-    font-size: 0.8125em;
+    font-size: 0.93755em;
     color: #FAF1E0;
 }
 
@@ -452,7 +452,7 @@ header .hero-img {
     background-size:100%;
    
     background-repeat: no-repeat;
-    padding-top: 35.5em;/*?*/
+    padding-top: 42.5em;/*?*/
     
     
     }
@@ -472,8 +472,8 @@ header .brand h3 {
 }
 
 header .info {
-    top: 27.825em;
-    line-height: .8em;
+    top: 33.825em;
+    line-height: .85em;
 }
 
 header .info h5, header .info h4 {
@@ -494,7 +494,9 @@ main .filter-wrapper {
 
 div.filter-title {
     width: 100%;
-    overflow: hidden;
+    line-height: 2.4em;
+    overflow:hidden;
+   
     padding: 35px 0 23px 0;
 }
 
@@ -502,11 +504,12 @@ div.filter-title {
 div.filter-title a.drop-btn {
     background-image: url('images/drop-arrow.png');
     display: inline-block;
-   float: right;
+    margin-top: 3em;
+    float: right;
     width: 26px;
     height: 18px;
- 
-    margin-left: 10px;
+    position: relative;
+   
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
     transition: -webkit-transform .5s ease-in;
@@ -517,19 +520,22 @@ div.filter-title a.drop-btn {
 
 div.filter-title h2 {
     display: inline-block;
+    width: 68%;
+    position: absolute;
     margin: 0 auto;
 }
 
 div.filter-title h2 .active-sort {
     display: inline-block;
     border-bottom: thick dotted #EC512C;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
 }
 
 div.filter-tab {
     height: auto;
     overflow: hidden;
     max-height: 30.625em;
+    padding-top: 1.5em;
     transition: max-height .5s ease-in;
 }
 
@@ -541,7 +547,7 @@ ul#filter {
 
 ul#filter li {
     display: inline-block;
-    width: 49.3%;
+    width: 48.3%;
     padding-bottom: 25px;
 }
 
@@ -560,7 +566,7 @@ ul#filter li a {
 
 
     
-/* Mobile Portfolio Portrait Gallery Android 360*/
+/* Mobile Portfolio Portrait Gallery Large 425*/
 
 
  .mix {
@@ -631,6 +637,203 @@ footer #bottom #location #locale {
 
     
 }
+
+
+
+/*-------------------Mobile Medium------------------*/
+
+@media screen and (max-width:375px){
+    
+    
+/*text styles*/
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3.25em;
+    color: #FAF1E0;
+}
+
+h2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.6875em;
+    color: #FAF1E0;
+}
+
+h3 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.9375em;
+    color: #F1AF31;
+}
+
+h4 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.1875em;
+    color: #FAF1E0;
+}
+
+h5 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.8125xem;
+    color: #FAF1E0;
+}
+    
+/*header*/
+    
+header .hero-img {
+    width: 100%;
+  
+    background-image: url("images/mobile-hero.png");
+    background-size:100%;
+   
+    background-repeat: no-repeat;
+    padding-top: 37.5em;/*?*/
+    
+    
+    }
+    
+    
+header .info {
+    top: 29.625em;
+    line-height: .8em;
+}
+    
+    
+}
+
+
+/*-------------------Mobile Small------------------*/
+
+@media screen and (max-width:320px){
+    
+    
+/*text styles*/
+    
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.8275em;
+    color: #FAF1E0;
+}
+
+h2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.275em;
+    color: #FAF1E0;
+}
+
+h3 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.8125em;
+    color: #F1AF31;
+}
+
+h4 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.040625em;
+    color: #FAF1E0;
+}
+
+h5 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.75625em;
+    color: #FAF1E0;
+}
+
+/*header*/
+    
+header .hero-img {
+    width: 100%;
+  
+    background-image: url("images/mobile-hero.png");
+    background-size:100%;
+   
+    background-repeat: no-repeat;
+    padding-top: 32.5em;/*?*/
+    
+    
+    }
+    
+header .brand {
+    top: 3.4rem;
+}
+    
+    
+header .info {
+    top: 25.125em;
+    line-height: .8em;
+}
+
+/*filter*/
+    
+ main .filter-wrapper {
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    background-color: #E8A631;
+    padding-bottom: .625;
+    float: left;
+  
+}
+
+div.filter-title {
+    width: 100%;
+    line-height: 1.8em;
+    overflow:hidden;
+   
+    padding: 2.1875em 0 0px 0;
+}
+
+
+div.filter-title a.drop-btn {
+    background-image: url('images/drop-arrow.png');
+    display: inline-block;
+    margin-top: 3em;
+    float: right;
+    width: 26px;
+    height: 18px;
+    position: relative;
+   
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    transition: -webkit-transform .5s ease-in;
+    transition: transform .5s ease-in;
+    transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+}
+
+
+div.filter-title h2 {
+    display: inline-block;
+    width: 60%;
+    position: absolute;
+    margin: 0 auto;
+}
+
+div.filter-title h2 .active-sort {
+    display: inline-block;
+    border-bottom: thick dotted #EC512C;
+    padding-bottom: 3px;
+}
+
+div.filter-tab {
+    height: auto;
+    overflow: hidden;
+    max-height: 30.625em;
+   
+    transition: max-height .5s ease-in;
+}
+    
+    
+
+}
+
+
 
 
 /******** Desktop Starts Here ********/
