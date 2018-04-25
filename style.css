@@ -359,6 +359,7 @@ footer #bottom #social .logos {
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
+    max-width: 150px;
 }
 
 footer #bottom #social .logos img {
@@ -379,7 +380,6 @@ footer #bottom #location p.fjord {
     font-size: 1em;
     margin-top: 5px;
 }
-
 
 /* -------------------Responsive Mobile starts here 360--------------------------------- */
 
@@ -843,7 +843,58 @@ header .info {
      
         
     }
+
+/* Mobile Footer Styling */
+
+footer p {
+    text-align: center;
+}
+
+footer #sponsors {
+    width: 90%;
+    margin-top: 25px;
+}
+
+footer #sponsors img {
+    width: 40%;
+    margin: 0;
+    max-height: 80px;
+    margin: 15px 0 10px 0;
+}
+
+footer #bottom {
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+footer #bottom > div {
+    flex: 100%;
+}
+
+footer #bottom #mark {
+    display: none;
+}
+
+footer #bottom #social .logos {
+    width: 60%;
+    margin: 25px auto;
+    max-width: none;
+}
+
+footer #bottom #social .logos img {
+    height: 40px;
+}
+
+footer #bottom #location {
+    margin-top: 35px;
+}
+
     
+footer #bottom #location #locale {
+    margin-bottom: 25px;
+}
+
+
     
     
 /* -------------------Responsive Mobile Large starts here 435--------------------------------- */
@@ -868,4 +919,5 @@ header .info {
     line-height: .8em;
 }
     }
+
 
