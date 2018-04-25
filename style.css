@@ -383,7 +383,7 @@ footer #bottom #location p.fjord {
 
 /* -------------------Responsive Mobile starts here 360--------------------------------- */
 
-@media screen and (max-width:700px)  {
+@media screen and (max-width:370px)  {
 
     
 
@@ -594,7 +594,7 @@ section.gallery .grid .mix .name {
 
 /* -------------------Responsive Mobile starts here 360--------------------------------- */
 
-@media screen and (max-width:700px)  {
+@media screen and (max-width:370px)  {
 
     
 
@@ -788,8 +788,84 @@ section.gallery .grid .mix .name {
 }
 
 
-
-    
-    
-    
 }
+    
+
+/* -------------------Responsive Mobile SSmall starts here 320--------------------------------- */
+    @media screen and (max-width:359px) and (min-width:310px)  {
+
+header .hero-img {
+    width: 100%;
+  
+    background-image: url("images/mobile-hero.png");
+    background-size:100%;
+    background-repeat: no-repeat;
+    padding-top: 32.5em;/*?*/
+    
+    
+    }
+        
+header .info {
+    top: 25.125em;
+    line-height: .8em;
+}
+        
+        
+ul#filter li {
+    display: inline-block;
+    width: 47.3%;
+    padding-bottom: 25px;
+}
+
+
+        
+    }
+    
+/* -------------------Responsive Mobile Medium starts here 375--------------------------------- */
+ 
+    @media screen and (max-width:380px)    {
+        
+ header .hero-img {
+    width: 100%;
+  
+    background-image: url("images/mobile-hero.png");
+    background-size:100%;
+   
+    background-repeat: no-repeat;
+    padding-top: 37.9em;/*?*/
+        
+    }
+        
+header .info {
+    top: 30.125em;
+    line-height: .8em;
+}
+     
+        
+    }
+    
+    
+    
+/* -------------------Responsive Mobile Large starts here 435--------------------------------- */
+ 
+    @media screen and (max-width:445px)and (min-width:400px)  {
+        
+        
+        
+ header .hero-img {
+    width: 100%;
+  
+    background-image: url("images/mobile-hero.png");
+    background-size:100%;
+   
+    background-repeat: no-repeat;
+    padding-top: 42.9em;/*?*/
+        
+    }
+        
+header .info {
+    top: 34.125em;
+    line-height: .8em;
+}
+    }
+
