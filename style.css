@@ -381,10 +381,7 @@ footer #bottom #location p.fjord {
     font-size: 1em;
     margin-top: 5px;
 }
-<<<<<<< HEAD
- 
-=======
->>>>>>> e224bb8f6def84dceb9626d607bdbee63e705238
+
 
 /* -------------------Responsive Mobile starts here 360--------------------------------- */
 
@@ -849,9 +846,7 @@ footer #bottom #location #locale {
     
 }
 
-<<<<<<< HEAD
->>>>>>> e224bb8f6def84dceb9626d607bdbee63e705238
-=======
+
 
 /******** Desktop Starts Here ********/
 @media screen and (min-width:768px){
@@ -919,4 +914,3 @@ footer #bottom #location #locale {
         padding-bottom: 30%;
     }
 }
->>>>>>> master
