@@ -1,0 +1,9 @@
+diff a/style.css b/style.css	(rejected hunks)
+@@ -363,7 +363,6 @@
+ }
+ 
+ footer #bottom #social .logos img {
+-    height: 40px;
+     height: 30px;
+ }
+ 

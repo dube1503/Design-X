@@ -363,6 +363,7 @@ footer #bottom #social .logos {
 }
 
 footer #bottom #social .logos img {
+    height: 40px;
     height: 30px;
 }
 
@@ -848,4 +849,74 @@ footer #bottom #location #locale {
     
 }
 
+<<<<<<< HEAD
 >>>>>>> e224bb8f6def84dceb9626d607bdbee63e705238
+=======
+
+/******** Desktop Starts Here ********/
+@media screen and (min-width:768px){
+    
+    h1{
+        font-size: 3.75em;
+    }
+    
+    h3{
+        font-size: 1.5625em;
+    }
+    
+    h4{
+        font-size: 1.1875em;
+    }
+    
+    h5{
+        font-size: .8em;
+    }
+    
+    p{
+        font-size: 1.15em;
+    }
+    
+    
+    
+    
+    header .hero-img{
+        background-image: url("images/tablet_header.jpg");
+        padding-top: 67.139%;
+        
+    }
+    
+    header .brand{
+        top: 70px;
+    }
+    
+    header .brand h3{
+        text-align: left;
+        margin-top: 15px;
+    }
+    
+    header .info{
+        top:290px;
+    }
+    
+    
+    
+    
+    ul#filter li{
+        width:23%;
+    }
+    
+    div.filter-tab{
+        max-height: 125px;
+    }
+    
+    
+    
+    
+    
+    .mix{
+        margin: 5px;
+        width: 31%;
+        padding-bottom: 30%;
+    }
+}
+>>>>>>> master
