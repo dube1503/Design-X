@@ -129,6 +129,8 @@ p {
 
 header {
     background: linear-gradient(to right, #4fa0e9 , #4082be);
+    position: relative;
+    overflow: hidden;
 }
 
 header .hero-img {
@@ -155,7 +157,7 @@ header .brand h3 {
 }
 
 header .info {
-    bottom: -4%;
+    bottom: 10%;
 }
 
 header .info h5, header .info h4 {
@@ -411,7 +413,7 @@ footer #bottom #location p.fjord {
     }
 
     header .info {
-        bottom: 10.9399538%;
+        bottom: 10%;
         left: 6%;
         top: inherit;
     }
@@ -438,7 +440,7 @@ footer #bottom #location p.fjord {
     }
 
     header .info {
-        bottom: 23.9399538%;
+        bottom: 10%;
         left: 6%;
         top: inherit;
     }
@@ -488,7 +490,7 @@ footer #bottom #location p.fjord {
     }
     
     header .info{
-        bottom: 33%;
+        bottom: 10%;
     }
     
     ul#filter li{
@@ -593,7 +595,7 @@ header .brand h3 {
 }
 
 header .info {
-    bottom: -5%;
+    bottom: 5%;
     line-height: .85em;
 }
 
@@ -1012,7 +1014,7 @@ div.filter-tab {
     }
     
     header .info{
-        bottom: 41%;
+        bottom: 15%;
     }
     
     ul#filter li{
