@@ -121,8 +121,6 @@ p {
 
 #wrapper {
     width: 100%;
-    margin: 0 auto;
-    max-width: 1440px;
 }
 
 /* Header Styles */
@@ -135,7 +133,7 @@ header {
 
 header .hero-img {
     width: 100%;
-    background-image: url("images/Background-Img.png");
+    background-image: url("images/large-header.png");
     background-size: 1440px;
     background-repeat: no-repeat;
     height: 0;
@@ -149,6 +147,7 @@ header .brand, header .info {
 
 header .brand {
     top: 13.3125em;
+    visibility: hidden;
 }
 
 header .brand h3 {
@@ -167,6 +166,14 @@ header .info h5, header .info h4 {
 
 @media screen and (min-width: 1441px) {
 
+    header .hero-img {
+        background-size: 100%;
+        background-image: url(images/2560-header.png);
+    }
+
+    header .info {
+        visibility: hidden;
+    }
 }
 
 /* Content Filter */
@@ -587,6 +594,7 @@ header .brand, header .info {
 
 header .brand {
     top: 4.5rem;
+    visibility: visible;
 }
 
 header .brand h3 {
@@ -765,19 +773,23 @@ footer #bottom #location #locale {
 @media screen and (max-width: 425px) {
 
     header .hero-img {
-    width: 100%;
-  
-    background-image: url("images/mobile-hero.png");
-    background-size: 425px 680px;
-   
-    background-repeat: no-repeat;
-    padding-top: 42.5em;/*?*/
+        width: 100%;
+      
+        background-image: url("images/mobile-hero.png");
+        background-size: 425px 680px;
+       
+        background-repeat: no-repeat;
+        padding-top: 42.5em;/*?*/
     }
 
     header .info {
-    top: 33.825em;
-    line-height: .85em;
+        top: 33.825em;
+        line-height: .85em;
     }
+
+    header .brand {
+        visibility: visible;
+    }    
 
 }
 
@@ -835,7 +847,10 @@ header .hero-img {
     
     
     }
-    
+
+header .brand {
+    visibility: visible;
+}
     
 header .info {
     top: 29.625em;
@@ -904,6 +919,7 @@ header .hero-img {
     
 header .brand {
     top: 3.4rem;
+    visibility: visible;
 }
     
     
@@ -1007,6 +1023,7 @@ div.filter-tab {
     
     header .brand{
         top: 70px;
+        visibility: visible;
     }
     
     header .brand h3{
