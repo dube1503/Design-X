@@ -133,7 +133,7 @@ header {
 header .hero-img {
     width: 100%;
     background-image: url("images/Background-Img.png");
-    background-size: contain;
+    background-size: 1440px;
     background-repeat: no-repeat;
     height: 0;
     padding-top: 60.139%;
@@ -449,7 +449,7 @@ header .hero-img {
     width: 100%;
   
     background-image: url("images/mobile-hero.png");
-    background-size:100%;
+    background-size: 425px 680px;
    
     background-repeat: no-repeat;
     padding-top: 35.5em;/*?*/
@@ -635,7 +635,7 @@ footer #bottom #location #locale {
 
 
 /******** Tablet Starts Here ********/
-@media screen and (max-width:768px) and (min-width: 425px){
+@media screen and (max-width:768px) and (min-width: 426px){
 
     
     h1{
@@ -660,7 +660,8 @@ footer #bottom #location #locale {
     
     
     header .hero-img{
-        background-image: url("images/tablet_header.jpg");
+        background-image: url("images/tablet_header.png");
+        background-size: 768px;
         padding-top: 67.139%;
         
     }
