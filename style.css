@@ -122,6 +122,7 @@ p {
 #wrapper {
     width: 100%;
     margin: 0 auto;
+    max-width: 1440px;
 }
 
 /* Header Styles */
@@ -154,12 +155,16 @@ header .brand h3 {
 }
 
 header .info {
-    top: 35.125em;
+    bottom: -4%;
 }
 
 header .info h5, header .info h4 {
     margin-bottom: .4375em;
     letter-spacing: .05em;
+}
+
+@media screen and (min-width: 1441px) {
+
 }
 
 /* Content Filter */
@@ -270,6 +275,7 @@ ul#filter li a.selected {
     padding: 5px;
     width: 85%;
     margin: 1.25em auto 6.25em;
+    justify-content: center;
 }
 
 .mix {
@@ -308,6 +314,11 @@ section.gallery .grid .mix .name {
 footer {
     background-color: #EC512C;
     padding: 1.5625em 7.5% 3.75em 7.5%;
+}
+
+.footer-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 footer p {
@@ -382,12 +393,122 @@ footer #bottom #location p.fjord {
 }
 
 
+/* ------------"Responsive" Type breakpoints----------- */
+
+@media screen and (max-width: 1239px) and (min-width: 1056px) {
+
+    header .hero-img {
+        background-size: 1240px;
+    }
+
+    header .brand {
+        top: 9%;
+        left: 6%;
+    }
+
+    header .brand h3 {
+        margin-top: .875em;
+    }
+
+    header .info {
+        bottom: 10.9399538%;
+        left: 6%;
+        top: inherit;
+    }
+
+}
+
+@media screen and (max-width: 1055px) and (min-width: 928px) {
+
+    header .hero-img {
+        background-size: 1060px;
+    }
+
+    header .brand {
+        top: 9%;
+        left: 6%;
+    }
+
+    header .brand h1 {
+        font-size: 5.625em;
+    }
+
+    header .brand h3 {
+        margin-top: .875em;
+    }
+
+    header .info {
+        bottom: 23.9399538%;
+        left: 6%;
+        top: inherit;
+    }
+
+    header .info h5 {
+        font-size: 1em;
+    }
+
+    header .info h4 {
+        font-size: 1.6em;
+    }
+
+}
+
+@media screen and (max-width: 928px) and (min-width: 768px) {
+
+    h1{
+        font-size: 3.75em;
+    }
+    
+    h3{
+        font-size: 1.5625em;
+    }
+    
+    h4{
+        font-size: 1.1875em;
+    }
+    
+    h5{
+        font-size: .8em;
+    }
+    
+    p{
+        font-size: 1.15em;
+    }
+
+    header .hero-img {
+        background-size: 930px;
+    }
+    
+    header .brand{
+        top: 70px;
+    }
+    
+    header .brand h3{
+        margin-top: 15px;
+    }
+    
+    header .info{
+        bottom: 33%;
+    }
+    
+    ul#filter li{
+        width:23%;
+    }
+    
+    div.filter-tab{
+        max-height: 125px;
+    }
+
+    .mix{
+        width: 31%;
+        padding-bottom: 31%;
+    }
+}
+
 
 /* -------------------Responsive Mobile Large starts here 425--------------------------------- */
 
-@media screen and (max-width:425px)  {
-
-    
+@media screen and (max-width:620px)  {
 
     
     /* Responsive Mobile Text Styles */
@@ -449,13 +570,13 @@ header .hero-img {
     width: 100%;
   
     background-image: url("images/mobile-hero.png");
-    background-size: 425px 680px;
-   
+    background-size: 621px;
+    background-position: center;
     background-repeat: no-repeat;
-    padding-top: 42.5em;/*?*/
+    padding-top: 47.5em;
     
     
-    }
+}
 
 header .brand, header .info {
     position: absolute;
@@ -472,7 +593,7 @@ header .brand h3 {
 }
 
 header .info {
-    top: 33.825em;
+    bottom: -5%;
     line-height: .85em;
 }
 
@@ -521,7 +642,6 @@ div.filter-title a.drop-btn {
 div.filter-title h2 {
     display: inline-block;
     width: 68%;
-    position: absolute;
     margin: 0 auto;
 }
 
@@ -638,7 +758,26 @@ footer #bottom #location #locale {
     
 }
 
+/*-------------------Mobile Large Header-------------*/
 
+@media screen and (max-width: 425px) {
+
+    header .hero-img {
+    width: 100%;
+  
+    background-image: url("images/mobile-hero.png");
+    background-size: 425px 680px;
+   
+    background-repeat: no-repeat;
+    padding-top: 42.5em;/*?*/
+    }
+
+    header .info {
+    top: 33.825em;
+    line-height: .85em;
+    }
+
+}
 
 /*-------------------Mobile Medium------------------*/
 
@@ -687,7 +826,7 @@ header .hero-img {
     width: 100%;
   
     background-image: url("images/mobile-hero.png");
-    background-size:100%;
+    background-size: 376px;
    
     background-repeat: no-repeat;
     padding-top: 37.5em;/*?*/
@@ -753,7 +892,7 @@ header .hero-img {
     width: 100%;
   
     background-image: url("images/mobile-hero.png");
-    background-size:100%;
+    background-size: 321px;
    
     background-repeat: no-repeat;
     padding-top: 32.5em;/*?*/
@@ -811,7 +950,6 @@ div.filter-title a.drop-btn {
 div.filter-title h2 {
     display: inline-block;
     width: 60%;
-    position: absolute;
     margin: 0 auto;
 }
 
@@ -834,7 +972,7 @@ div.filter-tab {
 }
 
 /******** Tablet Starts Here ********/
-@media screen and (max-width:768px) and (min-width: 426px){
+@media screen and (max-width:768px) and (min-width: 621px){
 
     
     h1{
@@ -870,16 +1008,12 @@ div.filter-tab {
     }
     
     header .brand h3{
-        text-align: left;
         margin-top: 15px;
     }
     
     header .info{
-        top:290px;
+        bottom: 41%;
     }
-    
-    
-    
     
     ul#filter li{
         width:23%;
@@ -888,11 +1022,7 @@ div.filter-tab {
     div.filter-tab{
         max-height: 125px;
     }
-    
-    
-    
-    
-    
+
     .mix{
         width: 31%;
         padding-bottom: 31%;
