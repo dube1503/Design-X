@@ -277,7 +277,7 @@ ul#filter li a.selected {
     width: 18%;
     display: inline-table;
 
-    margin: 31.25%;
+    margin: 5px;
 
     position: relative;
 }
@@ -635,7 +635,7 @@ footer #bottom #location #locale {
 
 
 /******** Tablet Starts Here ********/
-@media screen and (max-width:768px) and (min-width: 426px){
+@media screen and (max-width:768px) and (min-width: 425px){
 
     
     h1{
